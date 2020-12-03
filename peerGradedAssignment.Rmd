@@ -1,0 +1,34 @@
+---
+title: "Peer Graded Assignment for R Templates Course"
+author: "Kazuki Okubo"
+date: "12/3/2020"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Summary of this document
+
+This R Markdown document is for the peer-graded assignment of the R templates course. Required components are a bulleted list, a plot, and a table. I have also applied the readthedown format.
+
+## An unnumebered bulleted list
+
+* abc
+* def
+* ghi
+
+## Plot of 'pressure' dataset
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+## Table of 'cars' dataset
+
+```{r cars}
+knitr::kable( head(cars), caption="Top 6 rows of the 'cars' dataset" )
+```
